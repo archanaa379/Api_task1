@@ -1,47 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>weather app </title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <div class="search-selection">
             <div class="input-wrapper">
-                <span class="material-symbols-rounded"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-</svg>search</span>
+                <span class="material-symbols-rounded"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                    </svg>search</span>
                 <input type="search" placeholder="Enter a city name" class="search-input">
             </div>
             <button class="location-button">
-                <span class="material-symbols-rounded"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
-  <path fill-rule="evenodd" d="m7.539 14.841.003.003.002.002a.755.755 0 0 0 .912 0l.002-.002.003-.003.012-.009a5.57 5.57 0 0 0 .19-.153 15.588 15.588 0 0 0 2.046-2.082c1.101-1.362 2.291-3.342 2.291-5.597A5 5 0 0 0 3 7c0 2.255 1.19 4.235 2.292 5.597a15.591 15.591 0 0 0 2.046 2.082 8.916 8.916 0 0 0 .189.153l.012.01ZM8 8.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" clip-rule="evenodd" />
-</svg>Map
-</span>
+                <span class="material-symbols-rounded"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                        fill="currentColor" class="size-4">
+                        <path fill-rule="evenodd"
+                            d="m7.539 14.841.003.003.002.002a.755.755 0 0 0 .912 0l.002-.002.003-.003.012-.009a5.57 5.57 0 0 0 .19-.153 15.588 15.588 0 0 0 2.046-2.082c1.101-1.362 2.291-3.342 2.291-5.597A5 5 0 0 0 3 7c0 2.255 1.19 4.235 2.292 5.597a15.591 15.591 0 0 0 2.046 2.082 8.916 8.916 0 0 0 .189.153l.012.01ZM8 8.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"
+                            clip-rule="evenodd" />
+                    </svg>Map
+                </span>
             </button>
-    </div>   
-    
-    <div class="no-results">
-         <img src="./image/no-result.svg" class="weather-icon">
-         <h3 class="title">Somehting went wrong!</h3>
-         <p class="message">we're unable to retrive the weather details. Ensue you've entered a valid city or try again later.</p>
-         
-    </div>
-
-    <div class="weather-section">
-        <div class="current-weather">
-            <img src="./image/clouds.svg" class="weather-icon">
-            <h2 class="temperature">00<span>&deg;C</span></h2>
-            <p class="description">Weather description</p>
         </div>
 
-        <!-- hourly weather -->
-         <div class="hourly-weather">
-            <ul class="weather-list">
-                <!-- <li class="weather-item">
+        <div class="no-results">
+            <img src="./image/no-result.svg" class="weather-icon">
+            <h3 class="title">Somehting went wrong!</h3>
+            <p class="message">we're unable to retrive the weather details. Ensue you've entered a valid city or try
+                again later.</p>
+
+        </div>
+
+        <div class="weather-section">
+            <div class="current-weather">
+                <img src="./image/clouds.svg" class="weather-icon">
+                <h2 class="temperature">00<span>&deg;C</span></h2>
+                <p class="description">Weather description</p>
+            </div>
+
+            <!-- hourly weather -->
+            <div class="hourly-weather">
+                <ul class="weather-list">
+                    <!-- <li class="weather-item">
                     <p class="time">00:00</p>
                     <img src="./image/clouds.svg" class="weather-icon">
                     <p class="temperature">20&deg;</p>
@@ -66,10 +75,11 @@
                     <img src="./image/clouds.svg" class="weather-icon">
                     <p class="temperature">20&deg;</p>
                 </li> -->
-            </ul>
-         </div>
-    </div>
+                </ul>
+            </div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>

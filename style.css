@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;  
+    font-family: "Montserrat", sans-serif;
 }
 
 body {
@@ -23,7 +23,7 @@ body {
     overflow: hidden;
     position: relative;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-} 
+}
 
 .search-selection {
     display: flex;
@@ -83,13 +83,13 @@ body {
 }
 
 .search-selection .location-button:hover {
-     color:  black;
-     background-color: lightblue;
-     border-color: purple;
+    color: black;
+    background-color: lightblue;
+    border-color: purple;
 }
 
 body.show-no-results .weather-section {
-     visibility: hidden;
+    visibility: hidden;
 }
 
 .no-results {
@@ -119,10 +119,10 @@ body.show-no-results .no-results {
 
 
 .weather-section .current-weather {
-        display: flex;
-        align-items: center;
-        padding: 20px 0 50px;
-        flex-direction: column;
+    display: flex;
+    align-items: center;
+    padding: 20px 0 50px;
+    flex-direction: column;
 }
 
 .current-weather .weather-icon {
@@ -147,7 +147,7 @@ body.show-no-results .no-results {
     font-weight: 500;
 }
 
-.hourly-weather  {
+.hourly-weather {
     padding: 16px 25px;
     border-top: 1px solid #d5ccff;
 }
@@ -164,7 +164,7 @@ body.show-no-results .no-results {
 }
 
 .hourly-weather:hover .weather-list {
-     scrollbar-color: #bfbfbf transparent;
+    scrollbar-color: #bfbfbf transparent;
 }
 
 .hourly-weather .weather-item {
@@ -173,7 +173,7 @@ body.show-no-results .no-results {
     font-weight: 500;
     align-items: center;
     flex-direction: column;
-} 
+}
 
 
 .hourly-weather .weather-item .weather-icon {

@@ -27,12 +27,12 @@ const displayHourlyForecast = (hourlyData) => {
         return forecastTime >= currentHour && forecastTime <= next24Hours;
     });
 
-    
+
     hourlyWeatherDiv.innerHTML = next24HoursData.map(item => {
         const temperature = Math.floor(item.temp_c);
         const time = item.time.split(" ")[1].substring(0, 5);
         const weatherIcon = Object.keys(weatherCodes).find(icon => weatherCodes[icon].includes(item.condition.code));
-        
+
         return `<li class="weather-item">
                     <p class="time">${time}</p>
                     <img src="./image/${weatherIcon}.svg" class="weather-icon">
@@ -60,10 +60,10 @@ const getWeatherDetails = async (API_URL) => {
         currentWeatherDiv.querySelector(".temperature").innerHTML = `${temperature}<span>&deg;C</span>`;
         currentWeatherDiv.querySelector(".description").innerHTML = description;
 
-       const combinedHourlyData = [...data.forecast.forecastday[0].hour, ...data.forecast.forecastday[1].hour];
-       displayHourlyForecast(combinedHourlyData);
+        const combinedHourlyData = [...data.forecast.forecastday[0].hour, ...data.forecast.forecastday[1].hour];
+        displayHourlyForecast(combinedHourlyData);
 
-       searchInput.values = data.location.name;
+        searchInput.values = data.location.name;
     } catch (error) {
         document.body.classList.add("show-no-results");
     }
@@ -78,7 +78,7 @@ const setupWeatherRequest = (cityName) => {
 searchInput.addEventListener("keyup", (e) => {
     const cityName = searchInput.value.trim();
 
-    if(e.key ==  "Enter" && cityName) {
+    if (e.key == "Enter" && cityName) {
         setupWeatherRequest(cityName);
     }
 })
