@@ -94,4 +94,4 @@ locationButton.addEventListener("click", () => {
     });
 });
 
-setupWeatherRequest("india");
+setupWeatherRequest("london");
